@@ -1,6 +1,6 @@
 CXX      = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -O2
-TARGET   = syngtp
+TARGET   = llk_analyzer
 SRCS     = main.cpp grammar.cpp algorithms.cpp
 OBJS     = $(SRCS:.cpp=.o)
 

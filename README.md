@@ -17,7 +17,7 @@
 ## Структура проекта
 
 ```
-syngtp/
+llk_analyzer/
 ├── grammar.hpp        — типы: Grammar, Word, Language, k-операции (Лемма 2.1)
 ├── grammar.cpp        — реализация: парсер грамматики, k-конкатенация
 ├── algorithms.hpp     — объявления алгоритмов 2.4–2.7
@@ -41,40 +41,39 @@ syngtp/
 ## Сборка
 
 ```bash
-cd syngtp
 make
 ```
 
-Исполняемый файл: `./syngtp`
+Исполняемый файл: `./llk_analyzer`
 
 ## Запуск
 
 ### 1. Запуск из файла грамматики (рекомендуется для демонстрации)
 
 ```bash
-./syngtp examples/ex_2_2_ll1.txt
-./syngtp examples/ex_2_3_nonstrong_ll2.txt
-./syngtp examples/ex_2_6_expressions.txt
-./syngtp examples/ex_2_11_sigma.txt
-./syngtp examples/ex_left_recursive.txt
+./llk_analyzer examples/ex_2_2_ll1.txt
+./llk_analyzer examples/ex_2_3_nonstrong_ll2.txt
+./llk_analyzer examples/ex_2_6_expressions.txt
+./llk_analyzer examples/ex_2_11_sigma.txt
+./llk_analyzer examples/ex_left_recursive.txt
 ```
 
 ### 2. Пакетный режим через stdin
 
 ```bash
-./syngtp < examples/ex_2_2_ll1.txt
+./llk_analyzer < examples/ex_2_2_ll1.txt
 ```
 
 ### 3. Встроенные демо-примеры (все примеры из лекций)
 
 ```bash
-./syngtp --demo
+./llk_analyzer --demo
 ```
 
 ### 4. Интерактивный режим
 
 ```bash
-./syngtp
+./llk_analyzer
 ```
 
 Команды интерактивного режима:
